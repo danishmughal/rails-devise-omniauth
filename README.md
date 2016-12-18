@@ -136,7 +136,13 @@ class User < ApplicationRecord
 end
 ```
 
-That's it! You should now have facebook signup/login links on their respective Devise-generated forms. You can also paste in the link anywhere else you may like: 
-```
+That's it! You should now have facebook signup/login links on their respective Devise-generated forms. You can also paste in the link anywhere else you may like (note: this link is both for signing up and signing in for facebook users): 
+```ruby
 <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>`
 ```
+
+
+
+## Extras
+
+* Trying to find the view files/folders for all of those forms devise created for you? They're all there, but hidden from you. If you want to see and edit them, simply run: ```$ rails generate devise:views```
